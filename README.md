@@ -40,14 +40,12 @@ terraform plan
 terraform apply
  ```
 
-Confirm by typing yes when prompted.
-
 ## Access your infrastructure:
 
 After the deployment is complete, Terraform will output the DNS name of the ALB. You can access your web servers via this ALB DNS name.
 
 
-5**To destroy the infrastructure and clean up all AWS resources created by Terraform, run:**
+5. **To destroy the infrastructure and clean up all AWS resources created by Terraform, run:**
 
 
  ```bash
