@@ -59,6 +59,7 @@ resource "aws_lb" "legacy_alb" {
   internal           = false
   load_balancer_type = "application"
   subnets            = var.subnet_ids
+  security_groups    = [aws_security_group.ec2_sg.id]
 }
 
 resource "aws_lb_target_group" "target_group" {
